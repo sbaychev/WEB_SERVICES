@@ -1,0 +1,9 @@
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\Library\Library\bin\Library.dll
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\Library\Library\bin\Library.pdb
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\Library\Library\obj\Debug\Library.dll
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\Library\Library\obj\Debug\Library.pdb
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\Library\Library\bin\Library.dll
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\Library\Library\bin\Library.pdb
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\Library\Library\obj\Debug\Library.dll
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\Library\Library\obj\Debug\Library.pdb
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache

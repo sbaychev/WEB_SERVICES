@@ -1,0 +1,36 @@
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\bin\Debug\LibraryExchangeClient.exe.config
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.Properties.Resources.resources
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.csproj.GenerateResource.Cache
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\bin\Debug\LibraryExchangeClient.exe
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\bin\Debug\LibraryExchangeClient.pdb
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\bin\Debug\System.Windows.Forms.Ribbon35.dll
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.exe
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.pdb
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.Library_Exchange.resources
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.AddBook.resources
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.AddAuthor.resources
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.Authentication.resources
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\bin\Debug\LibraryExchangeClient.exe.config
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.exe
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.pdb
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\bin\Debug\LibraryExchangeClient.exe
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\bin\Debug\LibraryExchangeClient.pdb
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.AddAuthor.resources
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.AddBook.resources
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.Authentication.resources
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.Library_Exchange.resources
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.Properties.Resources.resources
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.csproj.GenerateResource.Cache
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.Search.resources
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.Search.resources
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.ReserveBookForm.resources
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.EditBookForm.resources
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.EditBooks.resources
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.EditBookForm.resources
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.EditBooks.resources
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.ReserveBookForm.resources
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.Register.resources
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.Register.resources
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.csprojResolveAssemblyReference.cache
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.MyBooksOfInterest.resources
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\LibraryExchange\LibraryExchangeClient\obj\Debug\LibraryExchangeClient.csprojResolveAssemblyReference.cache

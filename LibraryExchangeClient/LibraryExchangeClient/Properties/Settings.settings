@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LibraryExchangeClient.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LibraryExchangeClient_ISBNService_ISBNService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://webservices.daehosting.com/services/isbnservice.wso</Value>
+    </Setting>
+    <Setting Name="LibraryExchangeClient_BookManagement_BookManagement" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:63756/Service/BookManagement.svc/soapService</Value>
+    </Setting>
+    <Setting Name="LibraryExchangeClient_AuthenticationService_AuthenticationService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:50878/AuthenticationService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:63756/Service/BookManagement.svc?xsd=xsd2" namespace="http://localhost/Library.Models" />
+  <xs:import schemaLocation="http://localhost:63756/Service/BookManagement.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Library.Models" />
+  <xs:element name="AddAuthor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://localhost/Library.Models" minOccurs="0" name="author" nillable="true" type="q1:Author" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddAuthorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://localhost/Library.Models" minOccurs="0" name="AddAuthorResult" nillable="true" type="q2:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllAuthors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllAuthorsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://localhost/Library.Models" minOccurs="0" name="GetAllAuthorsResult" nillable="true" type="q3:OperationResultSetOfAuthorUcBWdBTS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllTypes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://localhost/Library.Models" minOccurs="0" name="GetAllTypesResult" nillable="true" type="q4:OperationResultSetOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllGenres">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllGenresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://localhost/Library.Models" minOccurs="0" name="GetAllGenresResult" nillable="true" type="q5:OperationResultSetOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBook">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://localhost/Library.Models" minOccurs="0" name="book" nillable="true" type="q6:Book" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBookResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://localhost/Library.Models" minOccurs="0" name="AddBookResult" nillable="true" type="q7:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://localhost/Library.Models" minOccurs="0" name="user" nillable="true" type="q8:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://localhost/Library.Models" minOccurs="0" name="AddUserResult" nillable="true" type="q9:OperationResultValueOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditBook">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://localhost/Library.Models" minOccurs="0" name="book" nillable="true" type="q10:Book" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditBookResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://localhost/Library.Models" minOccurs="0" name="EditBookResult" nillable="true" type="q11:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBookOfInterest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Library.Models" minOccurs="0" name="book" nillable="true" type="q12:BookOfInterest" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBookOfInterestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://localhost/Library.Models" minOccurs="0" name="AddBookOfInterestResult" nillable="true" type="q13:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckBookOfInterest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bookid" type="xs:int" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckBookOfInterestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://localhost/Library.Models" minOccurs="0" name="CheckBookOfInterestResult" nillable="true" type="q14:OperationResultSetOfBookUcBWdBTS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksOfInterest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksOfInterestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://localhost/Library.Models" minOccurs="0" name="GetAllBooksOfInterestResult" nillable="true" type="q15:OperationResultSetOfBookOfInterest6WXd3OUP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksOfInterestByUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksOfInterestByUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://localhost/Library.Models" minOccurs="0" name="GetAllBooksOfInterestByUserResult" nillable="true" type="q16:OperationResultSetOfBookOfInterest6WXd3OUP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://localhost/Library.Models" minOccurs="0" name="GetAllBooksResult" nillable="true" type="q17:OperationResultSetOfBookUcBWdBTS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksByYear">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="year" type="xs:int" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksByYearResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://localhost/Library.Models" minOccurs="0" name="GetAllBooksByYearResult" nillable="true" type="q18:OperationResultSetOfBookUcBWdBTS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksByTitle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksByTitleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://localhost/Library.Models" minOccurs="0" name="GetAllBooksByTitleResult" nillable="true" type="q19:OperationResultSetOfBookUcBWdBTS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksByUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksByUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://localhost/Library.Models" minOccurs="0" name="GetAllBooksByUserResult" nillable="true" type="q20:OperationResultSetOfBookUcBWdBTS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksByAuthor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="authorName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksByAuthorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://localhost/Library.Models" minOccurs="0" name="GetAllBooksByAuthorResult" nillable="true" type="q21:OperationResultSetOfBookUcBWdBTS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksByGenre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="genre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksByGenreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://localhost/Library.Models" minOccurs="0" name="GetAllBooksByGenreResult" nillable="true" type="q22:OperationResultSetOfBookUcBWdBTS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksByType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBooksByTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://localhost/Library.Models" minOccurs="0" name="GetAllBooksByTypeResult" nillable="true" type="q23:OperationResultSetOfBookUcBWdBTS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReserveBook">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://localhost/Library.Models" minOccurs="0" name="book" nillable="true" type="q24:Book" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReserveBookResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://localhost/Library.Models" minOccurs="0" name="ReserveBookResult" nillable="true" type="q25:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

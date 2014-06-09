@@ -1,0 +1,6 @@
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\Library\Test\bin\Debug\Test.exe.config
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\Library\Test\bin\Debug\Test.exe
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\Library\Test\bin\Debug\Test.pdb
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\Library\Test\obj\Debug\Test.exe
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\Library\Test\obj\Debug\Test.pdb
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\Library\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache

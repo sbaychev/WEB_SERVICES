@@ -1,0 +1,10 @@
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\AuthenticationSOAP\AuthenticationSOAP\bin\AuthenticationSOAP.dll
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\AuthenticationSOAP\AuthenticationSOAP\bin\AuthenticationSOAP.pdb
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\AuthenticationSOAP\AuthenticationSOAP\obj\Debug\AuthenticationSOAP.dll
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\AuthenticationSOAP\AuthenticationSOAP\obj\Debug\AuthenticationSOAP.pdb
+C:\Users\stefan\Google Drive\SU Sofia\Master\Semester Two\Architecture Services and Web Services\Project\TheCode\AuthenticationSOAP\AuthenticationSOAP\obj\Debug\AuthenticationSOAP.csprojResolveAssemblyReference.cache
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\AuthenticationSOAP\AuthenticationSOAP\bin\AuthenticationSOAP.dll
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\AuthenticationSOAP\AuthenticationSOAP\bin\AuthenticationSOAP.pdb
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\AuthenticationSOAP\AuthenticationSOAP\obj\Debug\AuthenticationSOAP.csprojResolveAssemblyReference.cache
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\AuthenticationSOAP\AuthenticationSOAP\obj\Debug\AuthenticationSOAP.dll
+D:\AJLekc\University\Masters\II semester\SOA\Workspace\AuthenticationSOAP\AuthenticationSOAP\obj\Debug\AuthenticationSOAP.pdb

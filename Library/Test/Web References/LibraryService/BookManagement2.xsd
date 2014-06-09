@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://localhost/Library.Models" elementFormDefault="qualified" targetNamespace="http://localhost/Library.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:63756/Service/BookManagement.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Library.Models" />
+  <xs:import schemaLocation="http://localhost:63756/Service/BookManagement.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="Author">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AuthorId" type="xs:int" />
+      <xs:element minOccurs="0" name="AuthorInfo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BornDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeathDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Author" nillable="true" type="tns:Author" />
+  <xs:complexType name="OperationResult">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Library.Models" minOccurs="0" name="Error" type="q1:OperationResult.ErrorEnum" />
+      <xs:element minOccurs="0" name="ErrorString" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResult" nillable="true" type="tns:OperationResult" />
+  <xs:complexType name="OperationResultSetOfAuthorUcBWdBTS">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultSetOf{0}{#}" Namespace="http://localhost/Library.Models" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Author" Namespace="http://localhost/Library.Models" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OperationResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ResultSet" nillable="true" type="tns:ArrayOfAuthor" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OperationResultSetOfAuthorUcBWdBTS" nillable="true" type="tns:OperationResultSetOfAuthorUcBWdBTS" />
+  <xs:complexType name="ArrayOfAuthor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Author" nillable="true" type="tns:Author" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAuthor" nillable="true" type="tns:ArrayOfAuthor" />
+  <xs:complexType name="OperationResultSetOfUserUcBWdBTS">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultSetOf{0}{#}" Namespace="http://localhost/Library.Models" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="User" Namespace="http://localhost/Library.Models" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OperationResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ResultSet" nillable="true" type="tns:ArrayOfUser" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OperationResultSetOfUserUcBWdBTS" nillable="true" type="tns:OperationResultSetOfUserUcBWdBTS" />
+  <xs:complexType name="ArrayOfUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="User" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUser" nillable="true" type="tns:ArrayOfUser" />
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="tns:Location" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="Location">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Location" nillable="true" type="tns:Location" />
+  <xs:complexType name="OperationResultSetOfstring">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultSetOf{0}{#}" Namespace="http://localhost/Library.Models" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OperationResult">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ResultSet" nillable="true" type="q2:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OperationResultSetOfstring" nillable="true" type="tns:OperationResultSetOfstring" />
+  <xs:complexType name="Book">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Author" nillable="true" type="tns:Author" />
+      <xs:element minOccurs="0" name="BookId" type="xs:int" />
+      <xs:element minOccurs="0" name="Genre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Isbn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reserved" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+      <xs:element minOccurs="0" name="Year" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Book" nillable="true" type="tns:Book" />
+  <xs:complexType name="OperationResultSetOfBookUcBWdBTS">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultSetOf{0}{#}" Namespace="http://localhost/Library.Models" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Book" Namespace="http://localhost/Library.Models" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OperationResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ResultSet" nillable="true" type="tns:ArrayOfBook" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OperationResultSetOfBookUcBWdBTS" nillable="true" type="tns:OperationResultSetOfBookUcBWdBTS" />
+  <xs:complexType name="ArrayOfBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Book" nillable="true" type="tns:Book" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBook" nillable="true" type="tns:ArrayOfBook" />
+  <xs:complexType name="OperationResultSetOfBookOfInterest6WXd3OUP">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultSetOf{0}{#}" Namespace="http://localhost/Library.Models" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="BookOfInterest" Namespace="http://schemas.datacontract.org/2004/07/Library.Models" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OperationResult">
+        <xs:sequence>
+          <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Library.Models" minOccurs="0" name="ResultSet" nillable="true" type="q3:ArrayOfBookOfInterest" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OperationResultSetOfBookOfInterest6WXd3OUP" nillable="true" type="tns:OperationResultSetOfBookOfInterest6WXd3OUP" />
+</xs:schema>

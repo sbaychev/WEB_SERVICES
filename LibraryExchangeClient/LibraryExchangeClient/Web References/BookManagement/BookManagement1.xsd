@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Library.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Library.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:63756/Service/BookManagement.svc?xsd=xsd2" namespace="http://localhost/Library.Models" />
+  <xs:simpleType name="OperationResult.ErrorEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="InvalidInputData" />
+      <xs:enumeration value="InternalProblem" />
+      <xs:enumeration value="NotAuthenticated" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OperationResult.ErrorEnum" nillable="true" type="tns:OperationResult.ErrorEnum" />
+  <xs:complexType name="BookOfInterest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AuthorName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BookId" type="xs:int" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://localhost/Library.Models" minOccurs="0" name="User" nillable="true" type="q1:User" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BookOfInterest" nillable="true" type="tns:BookOfInterest" />
+  <xs:complexType name="ArrayOfBookOfInterest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookOfInterest" nillable="true" type="tns:BookOfInterest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookOfInterest" nillable="true" type="tns:ArrayOfBookOfInterest" />
+</xs:schema>

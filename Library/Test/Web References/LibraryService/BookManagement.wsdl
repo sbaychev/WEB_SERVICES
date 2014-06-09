@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BookManagement" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:63756/Service/BookManagement.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:63756/Service/BookManagement.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:63756/Service/BookManagement.svc?xsd=xsd2" namespace="http://localhost/Library.Models" />
+      <xsd:import schemaLocation="http://localhost:63756/Service/BookManagement.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Library.Models" />
+      <xsd:import schemaLocation="http://localhost:63756/Service/BookManagement.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBookManagement_AddAuthor_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAuthor" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_AddAuthor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAuthorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllAuthors_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAuthors" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllAuthors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAuthorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsers" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTypes" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllGenres_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllGenres" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllGenres_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllGenresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_AddBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBook" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_AddBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_AddBookOfInterest_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBookOfInterest" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_AddBookOfInterest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBookOfInterestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_CheckBookOfInterest_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckBookOfInterest" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_CheckBookOfInterest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckBookOfInterestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksOfInterest_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksOfInterest" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksOfInterest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksOfInterestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksOfInterestByUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksOfInterestByUser" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksOfInterestByUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksOfInterestByUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooks_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooks" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksByYear_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksByYear" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksByYear_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksByYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksByTitle_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksByTitle" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksByTitle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksByTitleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksByAuthor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksByAuthor" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksByAuthor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksByAuthorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksByGenre_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksByGenre" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksByGenre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksByGenreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksByType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksByType" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_GetAllBooksByType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksByTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_ReserveBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReserveBook" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_ReserveBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReserveBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_ReleaseBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReleaseBook" />
+  </wsdl:message>
+  <wsdl:message name="IBookManagement_ReleaseBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReleaseBookResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBookManagement">
+    <wsdl:operation name="AddAuthor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/AddAuthor" message="tns:IBookManagement_AddAuthor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/AddAuthorResponse" message="tns:IBookManagement_AddAuthor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAuthors">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/GetAllAuthors" message="tns:IBookManagement_GetAllAuthors_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/GetAllAuthorsResponse" message="tns:IBookManagement_GetAllAuthors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/GetAllUsers" message="tns:IBookManagement_GetAllUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/GetAllUsersResponse" message="tns:IBookManagement_GetAllUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/GetAllTypes" message="tns:IBookManagement_GetAllTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/GetAllTypesResponse" message="tns:IBookManagement_GetAllTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGenres">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/GetAllGenres" message="tns:IBookManagement_GetAllGenres_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/GetAllGenresResponse" message="tns:IBookManagement_GetAllGenres_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/AddBook" message="tns:IBookManagement_AddBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/AddBookResponse" message="tns:IBookManagement_AddBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddBookOfInterest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/AddBookOfInterest" message="tns:IBookManagement_AddBookOfInterest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/AddBookOfInterestResponse" message="tns:IBookManagement_AddBookOfInterest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckBookOfInterest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/CheckBookOfInterest" message="tns:IBookManagement_CheckBookOfInterest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/CheckBookOfInterestResponse" message="tns:IBookManagement_CheckBookOfInterest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksOfInterest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksOfInterest" message="tns:IBookManagement_GetAllBooksOfInterest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksOfInterestResponse" message="tns:IBookManagement_GetAllBooksOfInterest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksOfInterestByUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksOfInterestByUser" message="tns:IBookManagement_GetAllBooksOfInterestByUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksOfInterestByUserResponse" message="tns:IBookManagement_GetAllBooksOfInterestByUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooks">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooks" message="tns:IBookManagement_GetAllBooks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksResponse" message="tns:IBookManagement_GetAllBooks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksByYear">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksByYear" message="tns:IBookManagement_GetAllBooksByYear_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksByYearResponse" message="tns:IBookManagement_GetAllBooksByYear_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksByTitle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksByTitle" message="tns:IBookManagement_GetAllBooksByTitle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksByTitleResponse" message="tns:IBookManagement_GetAllBooksByTitle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksByAuthor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksByAuthor" message="tns:IBookManagement_GetAllBooksByAuthor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksByAuthorResponse" message="tns:IBookManagement_GetAllBooksByAuthor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksByGenre">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksByGenre" message="tns:IBookManagement_GetAllBooksByGenre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksByGenreResponse" message="tns:IBookManagement_GetAllBooksByGenre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksByType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksByType" message="tns:IBookManagement_GetAllBooksByType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/GetAllBooksByTypeResponse" message="tns:IBookManagement_GetAllBooksByType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReserveBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/ReserveBook" message="tns:IBookManagement_ReserveBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/ReserveBookResponse" message="tns:IBookManagement_ReserveBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBookManagement/ReleaseBook" message="tns:IBookManagement_ReleaseBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBookManagement/ReleaseBookResponse" message="tns:IBookManagement_ReleaseBook_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBookManagement" type="tns:IBookManagement">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddAuthor">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/AddAuthor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAuthors">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/GetAllAuthors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsers">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/GetAllUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTypes">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/GetAllTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllGenres">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/GetAllGenres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddBook">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/AddBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddBookOfInterest">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/AddBookOfInterest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBookOfInterest">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/CheckBookOfInterest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksOfInterest">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/GetAllBooksOfInterest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksOfInterestByUser">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/GetAllBooksOfInterestByUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooks">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/GetAllBooks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksByYear">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/GetAllBooksByYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksByTitle">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/GetAllBooksByTitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksByAuthor">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/GetAllBooksByAuthor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksByGenre">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/GetAllBooksByGenre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksByType">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/GetAllBooksByType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReserveBook">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/ReserveBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseBook">
+      <soap:operation soapAction="http://tempuri.org/IBookManagement/ReleaseBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BookManagement">
+    <wsdl:port name="BasicHttpBinding_IBookManagement" binding="tns:BasicHttpBinding_IBookManagement">
+      <soap:address location="http://localhost:63756/Service/BookManagement.svc/soapService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

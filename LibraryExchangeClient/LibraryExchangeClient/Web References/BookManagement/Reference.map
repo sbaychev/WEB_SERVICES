@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:63756/Service/BookManagement.svc?xsd=xsd1" filename="BookManagement.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:63756/Service/BookManagement.svc?xsd=xsd0" filename="BookManagement0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:63756/Service/BookManagement.svc?xsd=xsd3" filename="BookManagement1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:63756/Service/BookManagement.svc?xsd=xsd2" filename="BookManagement2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:63756/Service/BookManagement.svc?xsd=xsd4" filename="BookManagement3.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://localhost:63756/Service/BookManagement.svc?wsdl" filename="BookManagement.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>
